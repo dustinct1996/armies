@@ -1,0 +1,64 @@
+{
+  "Unit": {
+    "Minimum": 5,
+    "Maximum": 10,
+    "Model Type 1": {
+      "Minimum": 1,
+      "Maximum": 1,
+      "Weapon 1": {
+        "Type": "Ranged",
+        "Slot": [1],
+        "Profile": {
+        }
+      },
+      "Weapon 2": {
+        "Type": "Melee",
+        "Slot": [2],
+        "Profile": {
+        }
+      },
+      "Weapon 3": {
+        "Type": "Melee",
+        "Slot": [1,2],
+        "Profile": {
+        }
+      }
+    },
+    "Model Type 2": {
+      "Minimum": 4,
+      "Maximum": 9,
+      "Weapon 1": {
+        "Type": "Ranged",
+        "Slot": [1],
+        "Profile": {
+        }
+      },
+      "Weapon 2": {
+        "Type": "Ranged",
+        "Slot": [1],
+        "Profile": {
+        }
+      }
+    },
+    "Model Type 3": {
+      "Minimum": 0,
+      "Maximum": 2,
+      "Weapon 1": {
+        "Type": "Ranged",
+        "Slot": [1],
+        "Profile": {
+        }
+      }
+    },
+    "Model Type 4": {
+      "Minimum": 0,
+      "Maximum": 105,
+      "Weapon 1": {
+        "Type": "Ranged",
+        "Slot": [1],
+        "Profile": {
+        }
+      }
+    }
+  }
+}
