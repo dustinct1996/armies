@@ -1,0 +1,88 @@
+Home page
+- Will show all your armies similar to how GW app
+  shows them.
+- From here, you can delete or duplicate rosters
+
+Top right will be a "Add new wargame" button
+- This will let you download a new repository
+  (ex. Warhammer 40k, some other wargame, etc.)
+
+Bottom right will be a "New roster" sign
+- This will let you create a new roster
+- It opens a page titled "What game"
+
+Picking the game system displays all the .json files
+available in that repo (i.e. all the factions)
+
+Picking a faction displays all the detachments available
+to that faction
+
+{
+  "Assault Squad with Jump Packs": {
+    "Assault Sergeant": {
+      "Minimum": 1,
+      "Maximum": 1,
+      "Assault Sergeant": {
+        "Boltgun": {
+          "Type": "Ranged",
+          "Slot": [1],
+          "Rules": ""
+        },
+        "Grav-pistol": {
+          "Type": "Ranged",
+          "Slot": [1],
+          "Rules": ""
+        },
+        "Hand flamer": {
+          "Type": "Ranged",
+          "Slot": [1],
+          "Rules": ""
+        },
+        "Inferno pisol": {
+          "Type": "Ranged",
+          "Slot": [1],
+          "Rules": ""
+        },
+        "Plasma pistol": {
+          "Type": "Ranged",
+          "Slot": [1],
+          "Rules": ""
+        },
+        "Astartes chainsword": {
+          "Type": "Melee",
+          "Slot": [2],
+          "Rules": ""
+        },
+        "Power fist": {
+          "Type": "Melee",
+          "Slot": [2],
+          "Rules": ""
+        },
+        "Power weapon": {
+          "Type": "Melee",
+          "Slot": [2],
+          "Rules": ""
+        },
+        "Thunder hammer": {
+          "Type": "Melee",
+          "Slot": [2],
+          "Rules": ""
+        },
+        "Twin lightning claws": {
+          "Type": "Melee",
+          "Slot": [1,2],
+          "Rules": ""
+        },
+        "Astartes shield": {
+          "Rules": ""
+        }
+      }
+    },
+    "Assault Marine": {
+      "Minimum": 4,
+      "Maximum": 10,
+      "Assault Marine": {
+      }
+    }
+  }
+}
