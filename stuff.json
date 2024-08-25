@@ -1,88 +1,543 @@
-Home page
-- Will show all your armies similar to how GW app
-  shows them.
-- From here, you can delete or duplicate rosters
-
-Top right will be a "Add new wargame" button
-- This will let you download a new repository
-  (ex. Warhammer 40k, some other wargame, etc.)
-
-Bottom right will be a "New roster" sign
-- This will let you create a new roster
-- It opens a page titled "What game"
-
-Picking the game system displays all the .json files
-available in that repo (i.e. all the factions)
-
-Picking a faction displays all the detachments available
-to that faction
-
 {
-  "Assault Squad with Jump Packs": {
-    "Assault Sergeant": {
-      "Minimum": 1,
-      "Maximum": 1,
-      "Assault Sergeant": {
-        "Boltgun": {
-          "Type": "Ranged",
-          "Slot": [1],
-          "Rules": ""
-        },
-        "Grav-pistol": {
-          "Type": "Ranged",
-          "Slot": [1],
-          "Rules": ""
-        },
-        "Hand flamer": {
-          "Type": "Ranged",
-          "Slot": [1],
-          "Rules": ""
-        },
-        "Inferno pisol": {
-          "Type": "Ranged",
-          "Slot": [1],
-          "Rules": ""
-        },
-        "Plasma pistol": {
-          "Type": "Ranged",
-          "Slot": [1],
-          "Rules": ""
-        },
-        "Astartes chainsword": {
-          "Type": "Melee",
-          "Slot": [2],
-          "Rules": ""
-        },
-        "Power fist": {
-          "Type": "Melee",
-          "Slot": [2],
-          "Rules": ""
-        },
-        "Power weapon": {
-          "Type": "Melee",
-          "Slot": [2],
-          "Rules": ""
-        },
-        "Thunder hammer": {
-          "Type": "Melee",
-          "Slot": [2],
-          "Rules": ""
-        },
-        "Twin lightning claws": {
-          "Type": "Melee",
-          "Slot": [1,2],
-          "Rules": ""
-        },
-        "Astartes shield": {
-          "Rules": ""
+    "games": [
+        {
+            "Warhammer 40,000": {
+                "UnitTypes": [
+                    "Characters",
+                    "Battleline",
+                    "Transports",
+                    "Miscellaneous",
+                    "Allies"
+                ],
+                "Factions": [
+                    {
+                        "Space Marines": [
+                            {
+                                "FactionRule": {
+                                    "Oath of Moment": "If your Army Faction is Adeptus Astartes, at the start of your Command phase, select one unit from your opponent's army. Until the start of your next Command phase, that enemy unit is your Oath of Moment target. Each time a model with this ability makes an attack that targets your Oath of Moment target, you can re-roll the Hit roll."
+                                }
+                            },
+                            {
+                                "Units": [
+                                    {
+                                        "Name": "Captain with Jump Pack",
+                                        "UnitType": "Characters",
+                                        "Composition": [
+                                            {
+                                                "Name": "Captain with Jump Pack",
+                                                "Min": 1,
+                                                "Max": 1,
+                                                "Stats": "M-12\" T-4 SV-3+ W-5 LD-6+ OC-1",
+                                                "Wargear": [
+                                                    {
+                                                        "Dropdown": [
+                                                            {
+                                                                "Heavy Bolt Pistol": [
+                                                                    {
+                                                                        "Range": "18\""
+                                                                    },
+                                                                    {
+                                                                        "A": "1"
+                                                                    },
+                                                                    {
+                                                                        "BS": "2+"
+                                                                    },
+                                                                    {
+                                                                        "S": "4"
+                                                                    },
+                                                                    {
+                                                                        "AP": "-1"
+                                                                    },
+                                                                    {
+                                                                        "D": "1"
+                                                                    },
+                                                                    {
+                                                                        "Keywords": "Pistol"
+                                                                    }
+                                                                ],
+                                                                "Plasma Pistol": [
+                                                                    {
+                                                                        "Standard": [
+                                                                            {
+                                                                                "Range": "12\""
+                                                                            },
+                                                                            {
+                                                                                "A": "1"
+                                                                            },
+                                                                            {
+                                                                                "BS": "2+"
+                                                                            },
+                                                                            {
+                                                                                "S": "7"
+                                                                            },
+                                                                            {
+                                                                                "AP": "-2"
+                                                                            },
+                                                                            {
+                                                                                "D": "1"
+                                                                            },
+                                                                            {
+                                                                                "Keywords": "Pistol"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "Supercharge": [
+                                                                            {
+                                                                                "Range": "12\""
+                                                                            },
+                                                                            {
+                                                                                "A": "1"
+                                                                            },
+                                                                            {
+                                                                                "BS": "2+"
+                                                                            },
+                                                                            {
+                                                                                "S": "8"
+                                                                            },
+                                                                            {
+                                                                                "AP": "-3"
+                                                                            },
+                                                                            {
+                                                                                "D": "2"
+                                                                            },
+                                                                            {
+                                                                                "Keywords": "Hazardous, Pistol"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "Hand Flamer": [
+                                                                    {
+                                                                        "Range": "12\""
+                                                                    },
+                                                                    {
+                                                                        "A": "D6"
+                                                                    },
+                                                                    {
+                                                                        "BS": "N/A"
+                                                                    },
+                                                                    {
+                                                                        "S": "3"
+                                                                    },
+                                                                    {
+                                                                        "AP": "0"
+                                                                    },
+                                                                    {
+                                                                        "D": "1"
+                                                                    },
+                                                                    {
+                                                                        "Keywords": "Ignores Cover, Pistol, Torrent"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Astartes Chainsword": [
+                                                                    {
+                                                                        "Range": "Melee"
+                                                                    },
+                                                                    {
+                                                                        "A": "7"
+                                                                    },
+                                                                    {
+                                                                        "BS": "2+"
+                                                                    },
+                                                                    {
+                                                                        "S": "4"
+                                                                    },
+                                                                    {
+                                                                        "AP": "-1"
+                                                                    },
+                                                                    {
+                                                                        "D": "1"
+                                                                    }
+                                                                ],
+                                                                "Power Fist": [
+                                                                    {
+                                                                        "Range": "Melee"
+                                                                    },
+                                                                    {
+                                                                        "A": "5"
+                                                                    },
+                                                                    {
+                                                                        "BS": "2+"
+                                                                    },
+                                                                    {
+                                                                        "S": "8"
+                                                                    },
+                                                                    {
+                                                                        "AP": "-2"
+                                                                    },
+                                                                    {
+                                                                        "D": "2"
+                                                                    }
+                                                                ],
+                                                                "Relic Weapon": [
+                                                                    {
+                                                                        "Range": "Melee"
+                                                                    },
+                                                                    {
+                                                                        "A": "6"
+                                                                    },
+                                                                    {
+                                                                        "BS": "2+"
+                                                                    },
+                                                                    {
+                                                                        "S": "5"
+                                                                    },
+                                                                    {
+                                                                        "AP": "-2"
+                                                                    },
+                                                                    {
+                                                                        "D": "2"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "Checkbox": [
+                                                            {
+                                                                "Thunder Hammer": [
+                                                                    {
+                                                                        "Range": "Melee"
+                                                                    },
+                                                                    {
+                                                                        "A": "5"
+                                                                    },
+                                                                    {
+                                                                        "BS": "3+"
+                                                                    },
+                                                                    {
+                                                                        "S": "8"
+                                                                    },
+                                                                    {
+                                                                        "AP": "-2"
+                                                                    },
+                                                                    {
+                                                                        "D": "2"
+                                                                    },
+                                                                    {
+                                                                        "Keywords": "Devastating Wounds"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Relic Shield": [
+                                                                    {
+                                                                        "Rules": "The bearer has a Wounds characteristic of 6"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "Rules": [
+                                            "Leader",
+                                            "Oath of Moment"
+                                        ],
+                                        "Abilities": [
+                                            {
+                                                "Angel's Wrath": "While this model is leading a unit, each time that unit ends a Charge move, until the end of the turn, add 1 to the Strength characteristic of melee weapons equipped by models in that unit"
+                                            },
+                                            {
+                                                "Rites of Battle": "Once per battle round, one unit from your army with this ability can be targetered with a Stratagem for 0CP, even if another unit from your army has already been targetred with that Stratagem this phase."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Name": "Heavy Intercessor Squad",
+                                        "UnitType": "Battleline",
+                                        "Composition": [
+                                            {
+                                                "Name": "Heavy Intercessor Sergeant",
+                                                "Min": 1,
+                                                "Max": 1,
+                                                "Wargear": [
+                                                    {
+                                                        "Checkbox": [
+                                                            {
+                                                                "Bolt Pistol": [
+                                                                    {
+                                                                        "Range": "12\""
+                                                                    },
+                                                                    {
+                                                                        "A": "1"
+                                                                    },
+                                                                    {
+                                                                        "BS": "3+"
+                                                                    },
+                                                                    {
+                                                                        "S": "4"
+                                                                    },
+                                                                    {
+                                                                        "AP": "0"
+                                                                    },
+                                                                    {
+                                                                        "D": "1"
+                                                                    },
+                                                                    {
+                                                                        "Keywords": "Pistol"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Heavy Bolt Rifle": [
+                                                                    {
+                                                                        "Range": "30\""
+                                                                    },
+                                                                    {
+                                                                        "A": "2"
+                                                                    },
+                                                                    {
+                                                                        "BS": "3+"
+                                                                    },
+                                                                    {
+                                                                        "S": "5"
+                                                                    },
+                                                                    {
+                                                                        "AP": "-1"
+                                                                    },
+                                                                    {
+                                                                        "D": "1"
+                                                                    },
+                                                                    {
+                                                                        "Keywords": "Assault, Heavy"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Close Combat Weapon": [
+                                                                    {
+                                                                        "Range": "Melee"
+                                                                    },
+                                                                    {
+                                                                        "A": "3"
+                                                                    },
+                                                                    {
+                                                                        "BS": "3+"
+                                                                    },
+                                                                    {
+                                                                        "S": "4"
+                                                                    },
+                                                                    {
+                                                                        "AP": "0"
+                                                                    },
+                                                                    {
+                                                                        "D": "1"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "Name": "Heavy Intercessor",
+                                                "Min": "4",
+                                                "Max": "9",
+                                                "Wargear": [
+                                                    {
+                                                        "Checkbox": [
+                                                            {
+                                                                "Bolt Pistol": [
+                                                                    {
+                                                                        "Range": "12\""
+                                                                    },
+                                                                    {
+                                                                        "A": "1"
+                                                                    },
+                                                                    {
+                                                                        "BS": "3+"
+                                                                    },
+                                                                    {
+                                                                        "S": "4"
+                                                                    },
+                                                                    {
+                                                                        "AP": "0"
+                                                                    },
+                                                                    {
+                                                                        "D": "1"
+                                                                    },
+                                                                    {
+                                                                        "Keywords": "Pistol"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Heavy Bolt Rifle": [
+                                                                    {
+                                                                        "Range": "30\""
+                                                                    },
+                                                                    {
+                                                                        "A": "2"
+                                                                    },
+                                                                    {
+                                                                        "BS": "3+"
+                                                                    },
+                                                                    {
+                                                                        "S": "5"
+                                                                    },
+                                                                    {
+                                                                        "AP": "-1"
+                                                                    },
+                                                                    {
+                                                                        "D": "1"
+                                                                    },
+                                                                    {
+                                                                        "Keywords": "Assault, Heavy"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Close Combat Weapon": [
+                                                                    {
+                                                                        "Range": "Melee"
+                                                                    },
+                                                                    {
+                                                                        "A": "3"
+                                                                    },
+                                                                    {
+                                                                        "BS": "3+"
+                                                                    },
+                                                                    {
+                                                                        "S": "4"
+                                                                    },
+                                                                    {
+                                                                        "AP": "0"
+                                                                    },
+                                                                    {
+                                                                        "D": "1"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "Name": "Heavy Intercessor w/ Heavy Bolter",
+                                                "Min": 1,
+                                                "Max": 1,
+                                                "Constraint": "if Heavy Intercessor >=3",
+                                                "Wargear": [
+                                                    {
+                                                        "Checkbox": [
+                                                            {
+                                                                "Bolt Pistol": [
+                                                                    {
+                                                                        "Range": "12\""
+                                                                    },
+                                                                    {
+                                                                        "A": "1"
+                                                                    },
+                                                                    {
+                                                                        "BS": "3+"
+                                                                    },
+                                                                    {
+                                                                        "S": "4"
+                                                                    },
+                                                                    {
+                                                                        "AP": "0"
+                                                                    },
+                                                                    {
+                                                                        "D": "1"
+                                                                    },
+                                                                    {
+                                                                        "Keywords": "Pistol"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Heavy Bolter": [
+                                                                    {
+                                                                        "Range": "36\""
+                                                                    },
+                                                                    {
+                                                                        "A": "3"
+                                                                    },
+                                                                    {
+                                                                        "BS": "4+"
+                                                                    },
+                                                                    {
+                                                                        "S": "5"
+                                                                    },
+                                                                    {
+                                                                        "AP": "-1"
+                                                                    },
+                                                                    {
+                                                                        "D": "2"
+                                                                    },
+                                                                    {
+                                                                        "Keywords": "Assault, Heavy, Sustained Hits 1"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Close Combat Weapon": [
+                                                                    {
+                                                                        "Range": "Melee"
+                                                                    },
+                                                                    {
+                                                                        "A": "3"
+                                                                    },
+                                                                    {
+                                                                        "BS": "3+"
+                                                                    },
+                                                                    {
+                                                                        "S": "4"
+                                                                    },
+                                                                    {
+                                                                        "AP": "0"
+                                                                    },
+                                                                    {
+                                                                        "D": "1"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "SubFactions": [
+                                    {
+                                        "1st Company Task Force": [
+                                            {
+                                                "Extremis-level Threat": "Once per battle, in your Command phase, you can use this ability. If you do, until the start of your next Command phase, each time a model from your army with the oath of Moment ability makes an attack that targets your Oath of Moment target, you can re-roll the Wound roll as well.",
+                                                "Enhancements": [
+                                                    {
+                                                        "Name": "The Imperium's Sword",
+                                                        "Points": 25,
+                                                        "Keywords": [
+                                                            "Adeptus Astartes"
+                                                        ],
+                                                        "Body": "Add 1 to the Attacks characteristic of the bearer's melee weapons. Once per battle, at the start of any phase, the bearer can use this Enhancement. If it does, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by all other models in the bearer's unit as well."
+                                                    },
+                                                    {
+                                                        "Name": "Fear Made Manifest (Aura)",
+                                                        "Points": 35,
+                                                        "Keywords": [
+                                                            "Adeptus Astartes"
+                                                        ],
+                                                        "Body": "While an enemy unit (excluding Monsters and Vehicles) is within 6\" of the bearer, each time that unit fails a Battle-shock test, one model in that unit is destroyed (chosen by its controlling player). Once per battle, when such an enemy unit fails a Battle-shock test, you can choose for D3 models in that unit to be destroyed in this way instead."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
         }
-      }
-    },
-    "Assault Marine": {
-      "Minimum": 4,
-      "Maximum": 10,
-      "Assault Marine": {
-      }
-    }
-  }
+    ]
 }
