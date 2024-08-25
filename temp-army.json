@@ -2,70 +2,107 @@
   "games": [
     {    
       "Warhammer 40,000": {
+        "UnitTypes": [
+          "Characters",
+          "Battleline",
+          "Transports",
+          "Miscellaneous",
+          "Allies",
+        ],
         "Factions": [
-          "Space Marines",
-          "Space Wolves",
-          "Dark Angels",
-          "Black Templars",
-          "Blood Angels",
-          "Adeptus Custodes",
-          "Adeptus Sororitas",
-          "Adeptus Mechanicus",
-          "Imperial Guard",
-          "Imperial Knights",
-          "Thousand Sons",
-          "Death Guard",
-          "World Eaters",
-          "Chaos Space Marines",
-          "Chaos Daemons",
-          "Chaos Knights",
-          "Aeldari",
-          "Drukhari",
-          "Tyranids",
-          "Necrons",
-          "Genestealer Cults",
-          "T'au Empire",
-          "Orks"
-        ]
-      }
-    },
-    {    
-      "Age of Sigmar": {
-        "Factions": [
-          "Blades of Khorne",
-          "Disciples of Tzeentch",
-          "Hedonites of Slaanesh",
-          "Maggotkin of Nurgle",
-          "Skaven",
-          "Slaves to Darkness",
-          "Flesh-Eater Courts",
-          "Nighthaunt",
-          "Ossiarch Bonereapers",
-          "Soulblight Gravelords",
-          "Gloomspite Gitz",
-          "Ogor Mawtribes",
-          "Orruk Warclans",
-          "Sons of Behemat",
-          "Cities of Sigmar",
-          "Daughters of Khaine",
-          "Fyreslayers",
-          "Idoneth Deepkin",
-          "Kharadron Overlords",
-          "Lumineth Realm-lords",
-          "Seraphon",
-          "Stormcast Eternals",
-          "Sylvaneth"
-        ]
-      }
-    },
-    {    
-      "Shit Fuck": {
-        "Factions": [
-          "Piss Ass",
-          "Cunt Punch",
-          "Snot Cum",
-          "Ass Flaps",
-          "Pube Shit"
+          {
+            "Space Marines": [
+              {
+                "FactionRule": { 
+                  "Oath of Moment": "If your Army Faction is Adeptus Astartes, at the start of your Command phase, select one unit from your opponent's army. Until the start of your next Command phase, that enemy unit is your Oath of Moment target. Each time a model with this ability makes an attack that targets your Oath of Moment target, you can re-roll the Hit roll."
+                }
+              }, 
+              {
+                "Units": [
+                  {
+                    "Name": "Captain with Jump Pack",
+                    "UnitType": "Characters",
+                    "Stats": "M-12\" T-4 SV-3+ W-5 LD-6+ OC-1",
+                    "Wargear": [
+                      {
+                        "Dropdown": [
+                          {
+                            "Heavy Bolt Pistol": "Range-18\" A-1 BS-2+ S-4 AP--1 D-1 Pistol",
+                            "Plasma Pistol": [
+                              {
+                                "Standard": "Range-12\" A-1 BS-2+ S-7 AP--2 D-1 Pistol"
+                              },
+                              {
+                                "Supercharge": "Range-12\" A-1 BS-2+ S-8 AP--3 D-2 Hazardous Pistol"
+                              }
+                            ],
+                            "Hand Flamer": "Range-12\" A-D6 BS-N/A S-3 AP-0 D-1 Ignores_Cover Pistol Torrent"
+                          },
+                          {
+                            "Astartes Chainsword": "Range-Melee A-7 BS-2+ S-4 AP-1 D-1",
+                            "Power Fist": "Range-Melee A-5 BS-2+ S-8 AP-2 D-2",
+                            "Relic Weapon": "Range-Melee A-6 BS-2+ S-5 AP-2 D-2"
+                          }
+                        ]
+                      },
+                      {
+                        "Checkbox-Solo": [
+                          {
+                            "Thunder Hammer": "Range-Melee A-5 BS-3+ S-8 AP-2 D-2 Devastating_Wounds"
+                          },
+                          {
+                            "Relic Shield": "The bearer has a Wounds characteristic of 6"
+                          }
+                        ]
+                      }
+                    ],
+                    "Rules": [
+                      "Leader",
+                      "Oath of Moment",
+                    ]
+                    "Abilities": [
+                      {
+                        "Angel's Wrath": "While this model is leading a unit, each time that unit ends a Charge move, until the end of the turn, add 1 to the Strength characteristic of melee weapons equipped by models in that unit"
+                      },
+                      {
+                        "Rites of Battle": "Once per battle round, one unit from your army with this ability can be targetered with a Stratagem for 0CP, even if another unit from your army has already been targetred with that Stratagem this phase."
+                      }
+                    ]
+                  },
+                  {
+                    "Name": "Intercessor Squad",
+                    "UnitType": "Battleline",
+                    "Min": "4",
+                    "Max": "9",
+                    "Composition": [
+                      
+                    ]
+                  }
+                ]
+              },
+              {
+                "SubFactions": [
+                  {
+                    "1st Company Task Force": [
+                      {
+                        "Extremis-level Threat": "Once per battle, in your Command phase, you can use this ability. If you do, until the start of your next Command phase, each time a model from your army with the oath of Moment ability makes an attack that targets your Oath of Moment target, you can re-roll the Wound roll as well.",
+                        "Enhancements": [
+                          {
+                            "Name":  "The Imperium's Sword",
+                            "Points": 25,
+                            "Keywords": [
+                              "Adeptus Astartes"
+                            ],
+                            "Body": "Ass"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       }
     }
