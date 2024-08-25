@@ -1,85 +1,73 @@
 {
   "games": [
-    "Warhammer 40,000": {
-      "Factions": [
-        "Space Marines",
-        "Space Wolves",
-        "Dark Angels",
-        "Black Templars",
-        "Blood Angels",
-        "Adeptus Custodes",
-        "Adeptus Sororitas",
-        "Adeptus Mechanicus",
-        "Imperial Guard",
-        "Imperial Knights",
-        "Thousand Sons",
-        "Death Guard",
-        "World Eaters",
-        "Chaos Space Marines",
-        "Chaos Daemons",
-        "Chaos Knights",
-        "Aeldari",
-        "Drukhari",
-        "Tyranids",
-        "Necrons",
-        "Genestealer Cults",
-        "T'au Empire",
-        "Orks"
-      ]
+    {    
+      "Warhammer 40,000": {
+        "Factions": [
+          "Space Marines",
+          "Space Wolves",
+          "Dark Angels",
+          "Black Templars",
+          "Blood Angels",
+          "Adeptus Custodes",
+          "Adeptus Sororitas",
+          "Adeptus Mechanicus",
+          "Imperial Guard",
+          "Imperial Knights",
+          "Thousand Sons",
+          "Death Guard",
+          "World Eaters",
+          "Chaos Space Marines",
+          "Chaos Daemons",
+          "Chaos Knights",
+          "Aeldari",
+          "Drukhari",
+          "Tyranids",
+          "Necrons",
+          "Genestealer Cults",
+          "T'au Empire",
+          "Orks"
+        ]
+      }
     },
-    "Age of Sigmar": {
-      "Factions": [
-        "Space Marines",
-        "Space Wolves",
-        "Dark Angels",
-        "Black Templars",
-        "Blood Angels",
-        "Adeptus Custodes",
-        "Adeptus Sororitas",
-        "Adeptus Mechanicus",
-        "Imperial Guard",
-        "Imperial Knights",
-        "Thousand Sons",
-        "Death Guard",
-        "World Eaters",
-        "Chaos Space Marines",
-        "Chaos Daemons",
-        "Chaos Knights",
-        "Aeldari",
-        "Drukhari",
-        "Tyranids",
-        "Necrons",
-        "Genestealer Cults",
-        "T'au Empire",
-        "Orks"
-      ]
+    {    
+      "Age of Sigmar": {
+        "Factions": [
+          "Blades of Khorne",
+          "Disciples of Tzeentch",
+          "Hedonites of Slaanesh",
+          "Maggotkin of Nurgle",
+          "Skaven",
+          "Slaves to Darkness",
+          "Flesh-Eater Courts",
+          "Nighthaunt",
+          "Ossiarch Bonereapers",
+          "Soulblight Gravelords",
+          "Gloomspite Gitz",
+          "Ogor Mawtribes",
+          "Orruk Warclans",
+          "Sons of Behemat",
+          "Cities of Sigmar",
+          "Daughters of Khaine",
+          "Fyreslayers",
+          "Idoneth Deepkin",
+          "Kharadron Overlords",
+          "Lumineth Realm-lords",
+          "Seraphon",
+          "Stormcast Eternals",
+          "Sylvaneth"
+        ]
+      }
     },
-    "Third Game": {
-      "Factions": [
-        "Space Marines",
-        "Space Wolves",
-        "Dark Angels",
-        "Black Templars",
-        "Blood Angels",
-        "Adeptus Custodes",
-        "Adeptus Sororitas",
-        "Adeptus Mechanicus",
-        "Imperial Guard",
-        "Imperial Knights",
-        "Thousand Sons",
-        "Death Guard",
-        "World Eaters",
-        "Chaos Space Marines",
-        "Chaos Daemons",
-        "Chaos Knights",
-        "Aeldari",
-        "Drukhari",
-        "Tyranids",
-        "Necrons",
-        "Genestealer Cults",
-        "T'au Empire",
-        "Orks"
-      ]
+    {    
+      "Shit Fuck": {
+        "Factions": [
+          "Piss Ass",
+          "Cunt Punch",
+          "Snot Cum",
+          "Ass Flaps",
+          "Pube Shit"
+        ]
+      }
     }
   ]
 }
